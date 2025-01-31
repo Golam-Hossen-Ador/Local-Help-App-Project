@@ -1,11 +1,10 @@
-<p><h1> Local Guide App: A Game-Changer for my City Jashore 🚀<h1>
+<p><h4> Local Guide App: A Game-Changer for my City Jashore 🚀<h4>
 
 This app is an innovative local guide designed to help residents and visitors easily find essential places and services in my city Jashore. Built with HTML, CSS, and JavaScript, it is a lightweight, user-friendly, and accessible solution for navigating hospitals, restaurants, shops, and more.
-🌍 Purpose of the App
-
-    Easy Access to Local Services → Helps users quickly find hospitals, clinics, restaurants, and other essential services.
-    Convenient Contact Information → Displays important details like phone numbers, addresses, and directions.
-    Tourism & Exploration → A great tool for newcomers to explore the city efficiently.
+Purpose of the App
+Easy Access to Local Services → Helps users quickly find hospitals, clinics, restaurants, and other essential services.
+Convenient Contact Information → Displays important details like phone numbers, addresses, and directions.
+Tourism & Exploration → A great tool for newcomers to explore the city efficiently.
 
 🔥 Benefits of the App
 
