@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Header Bar */
+        .header {
+            width: 100%;
+            background-color: #006a72;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .header .title {
+            margin-left: 15px;
+        }
+
+        .header .info-icon {
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        /* Dashboard Grid */
+        .dashboard {
+            margin-top: 180px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* Button Styles */
+        .dashboard-item {
+            background-color: white;
+            border: 2px solid #006a72;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-align: center;
+            width: 100%;
+            height: 100px;
+            outline: 2px solid #006a72;
+            transition: all 0.3s ease;
+        }
+
+        .dashboard-item img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 5px;
+        }
+
+        .dashboard-item span {
+            font-size: 14px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        /* Hover Effect */
+        .dashboard-item:hover {
+            background-color: #b3e0e2;
+            transform: scale(1.05);
+        }
+
+        /* Click Animation */
+        .dashboard-item:active {
+            background-color: #80c5c7;
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <span class="title">আমাদের যশোর</span>
+        <span class="info-icon">ℹ️</span>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+        <button class="dashboard-item" onclick="openPage('hospitallist.html')">
+            <img src="icons/Hospital icon.png.jpg" alt="Hospital">
+            <span>হাসপাতাল</span>
+        </button>
+        <button class="dashboard-item" onclick="openPage('pharmacy.html')">
+            <img src="icons/Pharmacy icon.png" alt="Pharmacy">
+            <span>ফার্মেসি</span>
+        </button>
+        <button class="dashboard-item" onclick="openPage('doctors.html')">
+            <img src="icons/Doctor icon.png" alt="Doctors">
+            <span>ডাক্তার</span>
+        </button>
+        <button class="dashboard-item" onclick="openPage('ambulance.html')">
+            <img src="icons/Ambulance icon.png" alt="Ambulance">
+            <span>অ্যাম্বুলেন্স</span>
+        </button>
+        <button class="dashboard-item" onclick="openPage('police.html')">
+            <img src="icons/Police icon.png" alt="Police">
+            <span>পুলিশ</span>
+        </button>
+        <button class="dashboard-item" onclick="openPage('fire_service.html')">
+            <img src="icons/Fire service icon.png" alt="Fire Service">
+            <span>ফায়ার সার্ভিস</span>
+        </button>
+        <button class="dashboard-item" onclick="openPage('bus_station.html')">
+            <img src="icons/Bus station.png" alt="Bus">
+            <span>বাস স্টেশন</span>
+        </button>
+        <button class="dashboard-item" onclick="openPage('train_station.html')">
+            <img src="icons/Train station icon.png" alt="Train">
+            <span>রেল স্টেশন</span>
+        </button>
+        <button class="dashboard-item" onclick="openPage('hotel.html')">
+            <img src="icons/Hotel icon.png" alt="Hotel">
+            <span>হোটেল</span>
+        </button>
+        <button class="dashboard-item" onclick="openPage('schools.html')">
+            <img src="icons/School icon.png" alt="School">
+            <span>স্কুল</span>
+        </button>
+        
+        <button class="dashboard-item" onclick="openPage('colleges.html')">
+            <img src="icons/College icon.png" alt="College">
+            <span>কলেজ</span>
+        </button>
+        
+        <button class="dashboard-item" onclick="openPage('universities.html')">
+            <img src="icons/University icon.png" alt="University">
+            <span>বিশ্ববিদ্যালয়</span>
+        </button>
+        
+        <button class="dashboard-item" onclick="openPage('banks.html')">
+            <img src="icons/Bank icon.png" alt="Bank">
+            <span>ব্যাংক</span>
+        </button>
+        
+        <button class="dashboard-item" onclick="openPage('atms.html')">
+            <img src="icons/ATM icon.png" alt="ATM">
+            <span>এটিএম</span>
+        </button>
+        
+        <button class="dashboard-item" onclick="openPage('bloodbanks.html')">
+            <img src="icons/Blood bank icon.png" alt="Blood Bank">
+            <span>ব্লাড ব্যাংক</span>
+        </button>
+        
+        <button class="dashboard-item" onclick="openPage('helplines.html')">
+            <img src="icons/Helpline icon.png" alt="Helpline">
+            <span>হেল্পলাইন</span>
+        </button>
+        
+        <button class="dashboard-item" onclick="openPage('restaurants.html')">
+            <img src="icons/Restaurant icon.png" alt="Restaurant">
+            <span>রেস্টুরেন্ট</span>
+        </button>
+        
+        <button class="dashboard-item" onclick="openPage('internet.html')">
+            <img src="icons/Internet icon.png" alt="Internet">
+            <span>ইন্টারনেট</span>
+        </button>
+        
+        <button class="dashboard-item" onclick="openPage('postoffice.html')">
+            <img src="icons/ZIP icon.png" alt="Post Office">
+            <span>পোস্ট অফিস</span>
+        </button>
+        
+        <button class="dashboard-item" onclick="openPage('organizations.html')">
+            <img src="icons/Organization icon.png" alt="Organization">
+            <span>সংগঠন</span>
+        </button>
+        
+        <button class="dashboard-item" onclick="openPage('courier.html')">
+            <img src="icons/Courier icon.png" alt="Courier">
+            <span>কুরিয়ার</span>
+        </button>
+        
+        <button class="dashboard-item" onclick="openPage('travelagencies.html')">
+            <img src="icons/Travel agency icon.png" alt="Travel Agency">
+            <span>ট্রাভেল এজেন্সি</span>
+        </button>
+        
+        <button class="dashboard-item" onclick="openPage('airport.html')">
+            <img src="icons/Air port icon.png" alt="Airport">
+            <span>বিমানবন্দর</span>
+        </button>        
+    </div>
+
+    <script>
+        function openPage(page) {
+            window.location.href = page; // Redirect to new page
+        }
+    </script>
+
+</body>
+</html>
