@@ -1,0 +1,154 @@
+/* Hospital List Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.header {
+  width: 100%;
+  background-color: #006a72;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header .title {
+  margin-left: 15px;
+}
+
+.header .back-btn {
+  margin-right: 15px;
+  cursor: pointer;
+  background: rgb(24, 159, 177);
+  color: #fafafa;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.header .back-btn:hover {
+  background: #3d95e7;
+}
+
+.hospital-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.hospital-item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border: 2px solid #006a72;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(17, 17, 17, 0.1);
+  cursor: pointer;
+  text-align: left;
+  outline: 2px solid #006a72;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+}
+.hospital-item:hover {
+  background-color: #b3e0e2;
+  transform: scale(1.03);
+}
+.hospital-item-left {
+  flex-basis: 30%;
+  height: 90%;
+  align-items: center;
+  margin: 10px;
+  justify-content: center;
+}
+
+.hospital-item-left img {
+  width: 100%;
+  height: 100%;
+  min-height: 138px; 
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hospital-item-right {
+  background-color:transparent;
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content:flex-start;
+  margin: 10px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+}
+.hospital-item-right h5 {
+  
+  margin-top: 10px;
+}
+
+.hospital-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.hospital-item-right span {
+  font-size: 16px;
+  color: #000000;
+  margin-top: 5px;
+}
+
+/* Map Button Styles */
+.map-button {
+  background-color: #4CAF50;
+  color: rgb(3, 3, 3);
+  border: 1.5px solid #0c0f0d;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  transition: 0.3s;
+  position: relative;
+  width: 100px;
+}
+
+.map-button:hover {
+  transform: scale(1.03);
+  background-color: #8de497;
+}
+
+.map-button:active {
+  background-color: #80c5c7;
+  transform: scale(0.95);
+}

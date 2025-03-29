@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="port" content="width=device-width, initial-scale=1.0">
+    <link href="style/stylehospitallistsadar.css" rel="stylesheet">
+    <title>হাসপাতাল তালিকা</title>
+</head>    
+
+<body>
+    <div class="header">
+        <span class="title">হাসপাতাল তালিকা</span>
+        <button class="back-btn" onclick="goBack()">⇐ ফিরে যান</button>
+    </div>
+
+    <div class="hospital-list">
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital1.html')">
+            <div class="hospital-item-left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtI6l6SDaozu8uvA9-vOeP8cBi8-fdc5tthQ&s" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>যশোর সরকারি সদর হাসপাতাল<br/>
+                    Jashore General Hospital</h4>
+                <span>২৫০ শয্যা বিশিষ্ট</span>
+                <h5 style="margin-top: 5px;">যশোর ৭৪০০, যশোর সদর, যশোর, বাংলাদেশ</h5>
+                <div class="hospital-info">
+                    <span>০১৭০১-২৪৮২২৪</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.16882871268702, 89.20915118493295)">location📍</span>
+                </div>
+            </div>
+        </button>
+
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital2.html')">
+            <div class="hospital-item-left">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipOhSctLxpgHmKojAkmUisLhZkF4ZRU2AkJn4W_x=w203-h152-k-no" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>একতা হাসপাতাল এন্ড ডায়াগোনষ্টিক সেন্টার <br>
+                Ekota Hospital and Diagnostic Center</h4>
+                <h5>ঘোপ, নোয়াপাড়া রোড, যশোর, বাংলাদেশ</h5>
+                
+                <div class="hospital-info">
+                    <span>01716518814</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.16767824571631, 89.20899404542523)">location📍</span>
+                </div>
+            </div>
+        </button>
+
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital3.html')">
+            <div class="hospital-item-left">
+                <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/480516682_3640470532764699_4894540209706589541_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=8N4oXVfoyGIQ7kNvgFwuiiX&_nc_oc=AdlVe6OaKR08dDKqjpQJm0-QSPVfkjye6RNB6fpjnaB8GfL932T9Xx7QM1_mZCZqn4c&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=4lbP9-0KJ5_QtYHuie7k_A&oh=00_AYEo5zPnHVRO3MHlfs7qe3tnS4S6ohIDQxrC4yIrsTMB_w&oe=67EB6A0E" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>উত্তরা প্রাইভেট হাসপাতাল<br>
+                Uttra Private Hospital</h4>
+                <h5>৫৩, জেলরোড, যশোর সদর, বাংলাদেশ</h5>
+                <div class="hospital-info"style="margin-top: 20px;">
+                    <span>01754-555852</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.16902335159926, 89.21326199332648)">location📍</span>
+                </div>
+            </div>
+        </button>
+
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital4.html')">
+            <div class="hospital-item-left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQioJ3_CceqDLWbfH4hN_y-stA7Tt8rerQmvA&s" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>ঝর্ণা ক্লিনিক<br>
+                Jharna Clinic</h4>
+                <h5> গুরুদাস বাবু লেন, পাইপপট্টি, যশোর</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১৩৯৫১৮৯</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.16272927607436, 89.20958370227525)">location📍</span>
+                </div>
+            </div>
+        </button>
+
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital6.html')">
+            <div class="hospital-item-left">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNUT9L94O9g7hvFgxtZhIyanTjbFKi8sHdm7PTs=s680-w680-h510" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>পঙ্গু হাসপাতাল যশোর <br>
+                Pangu Hospital Jessore</h4>
+                <h5>2308 রেলগেট, মুজিব সড়ক, যশোর, বাংলাদেশ</h5>
+                <div class="hospital-info">
+                    <span>০১৭১৬-৮৩৩৮১৩</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.15702274520994, 89.2053527411213)">location📍</span>
+                </div>
+            </div>
+        </button>
+
+        
+        
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital12.html')">
+            <div class="hospital-item-left">
+                <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/468039275_541963852083295_3104443334660593659_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=gIYplwdtU9EQ7kNvgEujRLp&_nc_oc=Adk4au5D5yyQb5iDEwmKwsiDC3I1fJNs2nL8ZeDNqTEPeMeR6sfg-RhjF-_Pn0TvfxI&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=2FQ_7vLXU2kC_R7rFwhS4g&oh=00_AYEShAbg3y-uINPahrU11NRviZShb70tetOgtWKJr2dV2A&oe=67EC4EB6" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>দড়াটানা হাসপাতাল এন্ড ডায়াগোনষ্টিক কমপ্লেক্স, যশোর<br>
+                Dhatana Hospital and Diagnostic Complex, Jessore</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_12</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১১৫৭৬৬৩</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.167761353647762, 89.2098813370378)">location📍</span>
+                </div>
+            </div>
+        </button>
+
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital15.html')">
+            <div class="hospital-item-left">
+                <img src="data:image/jpeg;base64,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" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>কুইন্স হাসপাতাল<br>
+                    Queens Hospital</h4>
+                <h5>Jail Rd, Jessore 7400</h5>
+                <div class="hospital-info">
+                    <span>09647-666777</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.16833111540988, 89.21136655351455)">location📍</span>
+                </div>
+            </div>
+        </button>
+        
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital25.html')">
+            <div class="hospital-item-left">
+                <img src="https://lh3.googleusercontent.com/gps-cs-s/AB5caB812_QyfXNvW533oCe1YrKgqHumH6t1nkm2s8y0vW730rw-b6d4bhGUpIgMxUWcp0C_jao7ob1Ue3LqQsxgSeUwob6d0d2WYH8lgI7b7ElkNqGIJs3uDRL4k07TmG_bf18QTj0=s680-w680-h510" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>আদ্ব-দ্বীন সকিনা মেডিকেল কলেজ ও হাসপাতাল <br>
+                    Ad-din Sakina Medical College and Hospital</h4>
+                <h5>পুলেরহাট বাজার মোড়,7400 যশোর, খুলনা </h5>
+                <div class="hospital-info">
+                    <span> 01713-488451</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.163480955880196, 89.21280167664324)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital25.html')">
+            <div class="hospital-item-left">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipNGgYyRHz3Xx4V31QJyBU9aemLzFZq5a-KA5d6-=w408-h306-k-no" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>আদ্ব-দ্বীন সকিনা মেডিকেল কলেজ ও হাসপাতাল <br>
+                    Ad-din Sakina Medical College and Hospital</h4>
+                <h5>15 rail road,7400 যশোর, খুলনা </h5>
+                <div class="hospital-info">
+                    <span>০১৭১৮২০৬৭৪৯<br>01713488460</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.163418214376577, 89.21275964212525)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/addin/hospital28.html')">
+            <div class="hospital-item-left">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipOh8ytOt3e0YrFG95n1mnYbwstxRRtUPaas0lE5=w408-h544-k-no" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>আদ্-দ্বীন চক্ষু হাসপাতাল (যশোর)<br>
+                    Ad-din Eye Hospital (Jashore)</h4>
+                <h5>Chanchra, Jessore, Bangladesh</h5>
+                <div class="hospital-info">
+                    <span>০১৭১৮২০৬৭৪৯</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.149946561185956, 89.20334245999445)">location📍</span>
+                </div>
+            </div>
+        </button>
+        
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital31.html')">
+            <div class="hospital-item-left">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipNG1zeeg0uKPEL5v2dZUFXtNaHc5PLcfDwzOXR9=w426-h240-k-no" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>আদ-দ্বীন হাসপাতাল (শিশু)<br>
+                    Ad-din Hospital (Children)</h4>
+                </h4>
+                <h5>558V+WQ8, ডিসির বাংলো সড়ক, যশোর</h5>
+                <div class="hospital-info">
+                    <span>042167893</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.167318058972143, 89.1944489840078)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital19.html')">
+            <div class="hospital-item-left">
+                <img src="https://jessoreinfo.com/wp-content/uploads/2025/02/Ibn-Sina-Hospital%E2%80%82Diagnostic-Center-Jashore-800x500.png" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>ইবনে সিনা ডায়াগোনষ্টিক<br>
+                    Ibn Sina Diagnostic & Consultation Center </h4>
+                <h5>House no-68, Jail Road, Ghope,Jessore (11 storied Building Jashore, Bangladesh, 7400</h5>
+                <div class="hospital-info">
+                    <span> 09610009624</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.16800583653263, 89.21038259080795)">location📍</span>
+                </div>
+            </div>
+        </button>
+        
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital21.html')">
+            <div class="hospital-item-left">
+                <img src="https://lh3.googleusercontent.com/gps-cs-s/AB5caB-OP974Atji1y5xNcfkWMcdmKB5Z8kj18DdsPanj0rZCMk3lKmE1HFpNAroVJtrd4f0Wt45tlAnE9a2bbnXBzu78JQasaWpdMiM8zgxMbAgppsCeV-k6Z3gT66Fh4wMurEJkIHH=s680-w680-h510" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>নোভা মেডিকেল সেন্টার <br>
+                Nova Medical Center</h4>
+                <h5>Kashoblal Rd, Jashore, Khulna Division, BD</h5>
+                <div class="hospital-info">
+                    <span>০১৯১১৪৫১১২১</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital22.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_22" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>ল্যাব স্ক্যান স্পেশালইজড হাসপাতাল</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_22</h5>
+                <div class="hospital-info">
+                    <span>০৪২১-৬৮৪৪৪</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.186092, 89.230674)">location📍</span>
+                </div>
+            </div>
+        </button>
+
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital23.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_23" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>ল্যাব স্ক্যান ডায়াগোনষ্টিক সার্ভিসেস লি:</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_23</h5>
+                <div class="hospital-info">
+                    <span>০৪২১-৬৭৭৩৩</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/jonota/hospital24.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_24" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>জনতা হাসপাতাল ও ডায়াগোনষ্টিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_24</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১১১৭৯০১</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.188092, 89.232674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital26.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_26" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>রোটারী হেলথ সেন্টারএন্ড ক্লিনিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_26</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১১৪৩৬০৪</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+
+        
+
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital9.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_9" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>মেরী স্টোপস ক্লিনিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_9</h5>
+                <div class="hospital-info">
+                    <span>০১৭৩৩৯৫৫০২৭</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital10.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_10" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>প্রাইম ডায়াগোনষ্টিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_10</h5>
+                <div class="hospital-info">
+                    <span>০১৭১২২৩৭৭৯৭</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital11.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_11" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>মেডিকিওর ডায়াগোনষ্টিক এন্ড কনসালটেন্সি</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_11</h5>
+                <div class="hospital-info">
+                    <span>০১৯১২৭৬২২৩৭</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.178092, 89.222674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital13.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_13" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>এ্যাপেোলা মেডিকেল সেন্টার</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_13</h5>
+                <div class="hospital-info">
+                    <span>০১৯১৪৭৭৩১৭০</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital14.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_14" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>যশোর অর্থোপেডিক্স কেয়ার</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_14</h5>
+                <div class="hospital-info">
+                    <span></span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital16.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_16" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>হাসিনা ক্লিনিক ও ডায়াগোনষ্টিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_16</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১১৮৩৮৭৫</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital17.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_17" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>যশোর সার্জিকাল হোম</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_17</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১৮৯৯২২৬</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital18.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_18" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>জনকল্যাণ হাসপাতাল</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_18</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১১১৩৩০০</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital20.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_20" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>মর্ডাণ ডায়াগোনষ্টিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_20</h5>
+                <div class="hospital-info">
+                    <span>০১৭২৭০৪১৭৮৮</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        
+        
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital27.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_27" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>পিকেএস , ৫৪/এ চাচড়া ডাল মিল</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_27</h5>
+                <div class="hospital-info">
+                    <span>০৪২১-৬৫০০১</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital29.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_29" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>ফেমাস ডেন্টাল</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_29</h5>
+                <div class="hospital-info">
+                    <span>০১৭১৫৪৪৮৮৭৮</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/shuvro/hospital30.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_30" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>শুভ্র ডেন্টাল ক্লিনিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_30</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১৮৯৯২৯০</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.194092, 89.238674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        
+    
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital8.html')">
+            <div class="hospital-item-left">
+                <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/482005489_992075526362567_7355323606998408466_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=fbMXoh9a3kIQ7kNvgHd-WVZ&_nc_oc=AdmCAe7zT9SmqzrNPjW_4mxM9xcMNiW0c-XEwBRYDtWiBy_s_qAiyS1ZO7Cr3sdv89w&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=uXco7K1Z7yQ6_LNzdM0RxA&oh=00_AYHilcJHXVH1vebiBbB6EDwnXu2qO_rFu1vrlji8U9yG6A&oe=67EC4EEA" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>কমটেক ডায়াগোনষ্টিক<br>
+                Com-tech Diagnostic</h4>
+                <h5>266, ঘোপা নওয়াপাড়া রোড যশোর সদর, যশোর, বাংলাদেশ</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১১০৯২১৭</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital5.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_5" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>গরীবশাহ ক্লিনিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_5</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১৩৯৮১৭৯</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.173092, 89.217674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital7.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_7" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>পলি ক্লিনিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_7</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১৩৩৩৩৩৩</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.174092, 89.218674)">location📍</span>
+                </div>
+            </div>
+        </button>
+    </div>
+        
+
+    <script>
+        function goToHospitalPage(page) {
+            window.location.href = page;
+        }
+        function goBack() {
+            window.history.back();
+        }
+        function openMap(lat, lng) {
+            let mapUrl = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+            window.open(mapUrl, "_blank");
+        }
+    </script>
+</body>
+</html>

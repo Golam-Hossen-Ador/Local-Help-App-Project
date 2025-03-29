@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/stylehospitallistsadar.css" rel="stylesheet">
+    <title>হাসপাতাল তালিকা</title>
+</head>    
+
+<body>
+    <div class="header">
+        <span class="title">হাসপাতাল তালিকা</span>
+        <button class="back-btn" onclick="goBack()">⇐ ফিরে যান</button>
+    </div>
+
+    <div class="hospital-list">
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital7.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_7" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>পলি ক্লিনিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_7</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১৩৩৩৩৩৩</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.174092, 89.218674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital8.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_8" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>কমটেক ডায়াগোনষ্টিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_8</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১১০৯২১৭</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital9.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_9" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>মেরী স্টোপস ক্লিনিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_9</h5>
+                <div class="hospital-info">
+                    <span>০১৭৩৩৯৫৫০২৭</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital10.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_10" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>প্রাইম ডায়াগোনষ্টিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_10</h5>
+                <div class="hospital-info">
+                    <span>০১৭১২২৩৭৭৯৭</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital11.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_11" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>মেডিকিওর ডায়াগোনষ্টিক এন্ড কনসালটেন্সি</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_11</h5>
+                <div class="hospital-info">
+                    <span>০১৯১২৭৬২২৩৭</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.178092, 89.222674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital12.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_12" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>দড়াটানা হাসপাতাল এন্ড ডায়াগোনষ্টিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_12</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১১৫৭৬৬৩</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.179092, 89.223674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital13.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_13" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>এ্যাপেোলা মেডিকেল সেন্টার</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_13</h5>
+                <div class="hospital-info">
+                    <span>০১৯১৪৭৭৩১৭০</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital14.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_14" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>যশোর অর্থোপেডিক্স কেয়ার</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_14</h5>
+                <div class="hospital-info">
+                    <span></span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital15.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_15" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>কুইন্স হাসপাতাল</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_15</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১৩২০৯১৭</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital16.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_16" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>হাসিনা ক্লিনিক ও ডায়াগোনষ্টিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_16</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১১৮৩৮৭৫</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital17.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_17" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>যশোর সার্জিকাল হোম</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_17</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১৮৯৯২২৬</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital18.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_18" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>জনকল্যাণ হাসপাতাল</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_18</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১১১৩৩০০</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital19.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_19" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>ইবনে সিনা ডায়াগোনষ্টিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_19</h5>
+                <div class="hospital-info">
+                    <span>০১৭১৬৭০২৫৪৭</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital20.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_20" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>মর্ডাণ ডায়াগোনষ্টিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_20</h5>
+                <div class="hospital-info">
+                    <span>০১৭২৭০৪১৭৮৮</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital21.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_21" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>নোভা মেডিকেল সেন্টার</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_21</h5>
+                <div class="hospital-info">
+                    <span>০১৯১১৪৫১১২০</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+    </div>
+
+    <script>
+        function goToHospitalPage(page) {
+            window.location.href = page;
+        }
+        function goBack() {
+            window.history.back();
+        }
+        function openMap(lat, lng) {
+            let mapUrl = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+            window.open(mapUrl, "_blank");
+        }
+    </script>
+</body>
+</html>

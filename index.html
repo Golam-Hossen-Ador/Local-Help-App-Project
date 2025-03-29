@@ -1,117 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
     <title>Dashboard</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        /* Header Bar */
-        .header {
-            width: 100%;
-            background-color: #006a72;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            font-size: 20px;
-            font-weight: bold;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-
-        .header .title {
-            margin-left: 15px;
-        }
-
-        .header .info-icon {
-            margin-right: 15px;
-            cursor: pointer;
-        }
-
-        /* Dashboard Grid */
-        .dashboard {
-            margin-top: 180px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            width: 100%;
-            max-width: 400px;
-        }
-
-        /* Button Styles */
-        .dashboard-item {
-            background-color: white;
-            border: 2px solid #006a72;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 15px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            text-align: center;
-            width: 100%;
-            height: 100px;
-            outline: 2px solid #006a72;
-            transition: all 0.3s ease;
-        }
-
-        .dashboard-item img {
-            width: 40px;
-            height: 40px;
-            margin-bottom: 5px;
-        }
-
-        .dashboard-item span {
-            font-size: 14px;
-            font-weight: bold;
-            color: #000000;
-        }
-
-        /* Hover Effect */
-        .dashboard-item:hover {
-            background-color: #b3e0e2;
-            transform: scale(1.05);
-        }
-
-        /* Click Animation */
-        .dashboard-item:active {
-            background-color: #80c5c7;
-            transform: scale(0.95);
-        }
-    </style>
 </head>
 <body>
 
     <!-- Header -->
     <div class="header">
         <span class="title">আমাদের যশোর</span>
-        <span class="info-icon">ℹ️</span>
+        <img src="icons\info icon.png"></img>
     </div>
 
     <!-- Dashboard -->
     <div class="dashboard">
-        <button class="dashboard-item" onclick="openPage('hospitallist.html')">
+        <button class="dashboard-item" onclick="openPage('Hospitallist/hospitallistsadar.html')">
             <img src="icons/Hospital icon.png.jpg" alt="Hospital">
             <span>হাসপাতাল</span>
         </button>

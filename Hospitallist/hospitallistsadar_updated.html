@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/stylehospitallistsadar.css" rel="stylesheet">
+    <title>হাসপাতাল তালিকা</title>
+</head>    
+
+<body>
+    <div class="header">
+        <span class="title">হাসপাতাল তালিকা</span>
+        <button class="back-btn" onclick="goBack()">⇐ ফিরে যান</button>
+    </div>
+
+    <div class="hospital-list">
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital22.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_22" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>ল্যাব স্ক্যান স্পেশালইজড হাসপাতাল</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_22</h5>
+                <div class="hospital-info">
+                    <span>০৪২১-৬৮৪৪৪</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.186092, 89.230674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital23.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_23" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>ল্যাব স্ক্যান ডায়াগোনষ্টিক সার্ভিসেস লি:</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_23</h5>
+                <div class="hospital-info">
+                    <span>০৪২১-৬৭৭৩৩</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/jonota/hospital24.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_24" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>জনতা হাসপাতাল ও ডায়াগোনষ্টিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_24</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১১১৭৯০১</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.188092, 89.232674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital25.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_25" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>আদ-দ্বীন হাসপাতাল</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_25</h5>
+                <div class="hospital-info">
+                    <span>০১৭১৮২০৬৭৪৯</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital26.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_26" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>রোটারী হেলথ সেন্টারএন্ড ক্লিনিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_26</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১১৪৩৬০৪</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital27.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_27" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>পিকেএস , ৫৪/এ চাচড়া ডাল মিল</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_27</h5>
+                <div class="hospital-info">
+                    <span>০৪২১-৬৫০০১</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/addin/hospital28.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_28" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>আদ-দ্বীন হাসপাতাল</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_28</h5>
+                <div class="hospital-info">
+                    <span>০১৭১৮২০৬৭৪৯</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.189092, 89.233674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital29.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_29" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>ফেমাস ডেন্টাল</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_29</h5>
+                <div class="hospital-info">
+                    <span>০১৭১৫৪৪৮৮৭৮</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/shuvro/hospital30.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_30" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>শুভ্র ডেন্টাল ক্লিনিক</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_30</h5>
+                <div class="hospital-info">
+                    <span>০১৭১১৮৯৯২৯০</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.194092, 89.238674)">location📍</span>
+                </div>
+            </div>
+        </button>
+        <button class="hospital-item" onclick="goToHospitalPage('Hospital Details/sadar/hospital31.html')">
+            <div class="hospital-item-left">
+                <img src="IMAGE_URL_FOR_HOSPITAL_31" alt="">
+            </div>
+            <div class="hospital-item-right">
+                <h4>আদ-দ্বীন হাসপাতাল (শিশু)</h4>
+                <h5>ADDRESS_FOR_HOSPITAL_31</h5>
+                <div class="hospital-info">
+                    <span>০১৭১৮২০৬৭৪৯</span>
+                    <span class="map-button" onclick="event.stopPropagation(); openMap(23.169092, 89.213674)">location📍</span>
+                </div>
+            </div>
+        </button>
+    </div>
+
+    <script>
+        function goToHospitalPage(page) {
+            window.location.href = page;
+        }
+        function goBack() {
+            window.history.back();
+        }
+        function openMap(lat, lng) {
+            let mapUrl = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+            window.open(mapUrl, "_blank");
+        }
+    </script>
+</body>
+</html>
